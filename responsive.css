@@ -1,0 +1,265 @@
+/* Default styles */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .align-right {
+    text-align: right;
+    color: azure;
+    padding-left: 0.5cm;
+  }
+  
+  .circle1 {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+  
+  .align-left {
+    text-align: left;
+    color: orange;
+    padding-right: 0.5cm;
+  }
+  
+  body {
+    background-color: rgba(237, 199, 144, 0.888);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0.4%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.481);
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ul li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  ul li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    text-align: center;
+    background-color: black;
+    color: azure;
+  }
+  
+  .rect {
+    background-color: black;
+    margin: 1.5cm;
+    border-radius: 20px;
+    padding-bottom: 2cm;
+  }
+  
+  .name2 {
+    color: orange;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+  
+  .circle2 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 20px;
+    margin-left: 4%;
+    margin-right: 4%;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 0px rgba(228, 228, 228, 0.489);
+  }
+  
+  .circles-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .circle2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .circle2:active {
+    transform: scale(0.9);
+  }
+  
+  .circle2:hover {
+    transform: scale(0.8);
+  }
+  
+  ul li a:active {
+    transform: scale(0.8);
+  }
+  
+  .aboutme {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.481);
+    text-align: center;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .aboutme {
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 10px;
+    box-shadow: 1cm;
+  }
+  
+  .aboutme3 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: orange;
+    margin-top: 1.8cm;
+    margin-bottom: 1cm;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    margin-right: 5cm;
+    margin-left: 5cm;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 1.2cm;
+    box-shadow: 10px 10px 10px 0px rgba(4, 232, 253, 0.489);
+  }
+  
+  .myedu {
+    color: orange;
+    background-color: black;
+    padding-bottom: 9px;
+    margin-top: 0;
+    border-radius: 20px;
+    padding-left: 2%;
+  }
+  
+  .myeduw {
+    color: white;
+    margin: 0;
+  }
+  
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6 {
+    width: calc(50% - 10px);
+    background-color: rgb(0, 0, 0);
+    margin-top: 2%;
+    text-align: center;
+    border-radius: 10px;
+    color: orange;
+    margin-right: 10px;
+    float: left;
+  }
+  
+  .div2,
+  .div4,
+  .div6 {
+    float: right;
+  }
+  
+  .div1:hover,
+  .div2:hover,
+  .div3:hover,
+  .div4:hover,
+  .div5:hover,
+  .div6:hover {
+    transform: scale(0.9);
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .circle1,
+    .circle2 {
+      margin: 20px 0;
+    }
+  
+    .circle2 {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5,
+    .div6 {
+      width: 100%;
+      margin-right: 0;
+      float: none;
+    }
+  }
+  
+
+  .container1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+   margin-top: 30PX;
+    margin-right: 0;
+    margin-left: 50px;
+   float:inline-start
+  
+  }
+
+  .text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .image1 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container1:hover .image1 {
+    display: block;
+  }
+
+
+
+
+
+
